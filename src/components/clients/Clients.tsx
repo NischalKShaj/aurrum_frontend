@@ -53,7 +53,7 @@ const Clients = () => {
         </h2>
         <Slider {...settings} className="client-carousel">
           {images.map((image, index) => (
-            <div key={index} className="px-4">
+            <div key={index} className="px-4 flex justify-center">
               <img
                 src={image}
                 alt={`Client ${index + 1}`}

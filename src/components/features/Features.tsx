@@ -57,13 +57,13 @@ const Features = () => {
 
   return (
     <div>
-      <h1 className="text-3xl mt-8 font-bold text-blue-800 mb-8">
+      <h1 className="text-3xl mt-8 font-bold text-blue-800 mb-8 text-center md:text-left">
         Growth with AURUMM:
         <br /> Your Partner in Success!
       </h1>
 
-      <div className="flex gap-6">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col gap-4 w-full md:w-1/2">
           {[
             "Cloud Support",
             "Savings Scheme Management",
@@ -88,16 +88,16 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full md:w-1/2">
           {selectedImageIndex !== null && (
             <img
               src={images[selectedImageIndex]}
               alt="Feature image"
-              className="w-[700px] h-[400px] object-contain mb-4"
+              className="w-full max-w-[700px] h-auto object-contain mb-4"
             />
           )}
           {selectedSubText !== null && (
-            <div className="text-center text-lg text-gray-700 w-[700px] break-words">
+            <div className="text-center text-lg text-gray-700 w-full max-w-[700px] break-words">
               {subtext[selectedSubText]}
             </div>
           )}

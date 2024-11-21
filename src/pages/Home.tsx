@@ -4,8 +4,10 @@
 import Clients from "../components/clients/Clients";
 import FeaturedApp from "../components/featuredApp/FeaturedApp";
 import Features from "../components/features/Features";
+import Help from "../components/help/Help";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
+import Product from "../components/products/Product";
 
 const Home = () => {
   return (
@@ -17,9 +19,6 @@ const Home = () => {
         <Hero />
         <div className="flex items-center justify-between">
           <div className="flex-1 pr-8 text-right">
-            <p className="text-xl font-semibold text-blue-600">
-              JEWELLERY STORE APP SUITE
-            </p>
             <h1 className="text-4xl font-bold text-blue-800 mb-4">
               Simplified Operations, Increased Profits.
             </h1>
@@ -49,7 +48,11 @@ const Home = () => {
         </div>
 
         <FeaturedApp />
-        <Features />
+        <div className="flex justify-center">
+          <Features />
+        </div>
+        <Product />
+        <Help />
         <Clients />
       </div>
     </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
               <div className=" bg-opacity-30 backdrop:backdrop-blur-sm absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 w-[500px] rounded-lg">
                 <div className="px-4 py-2 flex justify-left space-x-3 items-center">
                   <img
-                    src="/Aurum_Logo..png"
+                    src="/symbol.2d89ec5c.svg"
                     alt="logo"
                     className="w-12 h-12 object-contain"
                   />
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </div>
                 <div className="px-4 py-2 flex space-x-3 items-center">
                   <img
-                    src="/Aurum_Logo..png"
+                    src="/symbol.2d89ec5c.svg"
                     alt="logo"
                     className="w-12 h-12 object-contain"
                   />
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </div>
                 <div className="px-4 py-2 flex space-x-3 items-center">
                   <img
-                    src="/Aurum_Logo..png"
+                    src="/symbol.2d89ec5c.svg"
                     alt="logo"
                     className="w-12 h-12 object-contain"
                   />

@@ -61,5 +61,5 @@ The project has the following folder structure:
 ## Demo Video
 Check out the demo video for the project:
 
-[![Demo Video]([https://img.youtube.com/vi/VIDEO_ID/0.jpg](https://youtu.be/q3VOY3ECM_Q))]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/q3VOY3ECM_Q))
+[![Demo Video]((https://img.youtu.be/q3VOY3ECM_Q.jpg))]((https://youtu.be/q3VOY3ECM_Q))
 

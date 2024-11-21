@@ -61,7 +61,6 @@ const Hero = () => {
         {displayedText}
       </div>
 
-      {/* Button with Hover Effects */}
       <button className="bg-gradient-to-r from-blue-900 to-green-600 text-white rounded-full py-3 px-8 sm:px-10 font-bold text-xl flex items-center space-x-3 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <span>Book a Demo</span>
         <span className="text-2xl">&rarr;</span>

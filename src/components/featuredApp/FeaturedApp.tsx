@@ -1,9 +1,15 @@
 // <----------------------- file to show the featured apps ------------------------>
 
 // importing the required modules
-import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 const FeaturedApp = () => {
+  const navigate = useNavigate();
+
+  const handleMove = () => {
+    navigate("/product/ausales");
+  };
+
   return (
     <div className="flex flex-col items-center justify-center px-4 py-8 bg-gray-50">
       <h1 className="text-3xl font-bold text-blue-800 mb-8">
@@ -34,7 +40,10 @@ const FeaturedApp = () => {
             Sales is the only app you need!
           </p>
           <div className="mt-auto">
-            <button className="rounded-full bg-[#D7B56D] hover:bg-[#C1A05F] text-white py-3 px-6 text-lg transition-colors duration-300">
+            <button
+              onClick={handleMove}
+              className="rounded-full bg-[#D7B56D] hover:bg-[#C1A05F] text-white py-3 px-6 text-lg transition-colors duration-300"
+            >
               Get Started
             </button>
           </div>
@@ -63,9 +72,16 @@ const FeaturedApp = () => {
             Pay - the ultimate jewellery finance partner.
           </p>
           <div className="mt-auto">
-            <button className="rounded-full bg-[#41945A] hover:bg-[#357A4B] text-white py-3 px-6 text-lg transition-colors duration-300">
-              Get Started
-            </button>
+            <Link
+              to="#"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <button className="rounded-full bg-[#41945A] hover:bg-[#357A4B] text-white py-3 px-6 text-lg transition-colors duration-300">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-[#DFF3FFAB] shadow-md rounded-lg p-8 hover:shadow-xl transition-all duration-500 ease-in-out transform hover:scale-95 hover:translate-y-1 flex flex-col w-full max-w-lg">
@@ -92,9 +108,16 @@ const FeaturedApp = () => {
             shopping experience? Discover AU Shop and let's begin!
           </p>
           <div className="mt-auto">
-            <button className="rounded-full bg-[#36A4E5] hover:bg-[#2B8AC2] text-white py-3 px-6 text-lg transition-colors duration-300">
-              Get Started
-            </button>
+            <Link
+              to="#"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              <button className="rounded-full bg-[#36A4E5] hover:bg-[#2B8AC2] text-white py-3 px-6 text-lg transition-colors duration-300">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </div>

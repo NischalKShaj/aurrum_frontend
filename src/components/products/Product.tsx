@@ -62,7 +62,7 @@ const Product = () => {
       </div>
 
       {/* Feature Display Section */}
-      <div className="mt-12 text-center flex flex-wrap gap-6 justify-center items-center">
+      <div className="mt-12 text-center flex flex-row gap-6 justify-center items-center">
         {/* Image Section */}
         {selectedSVGIndex !== null && (
           <div className="flex justify-center w-full md:w-1/2">

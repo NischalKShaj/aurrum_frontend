@@ -58,8 +58,5 @@ The project has the following folder structure:
 4. Open a pull request (PR) with a description of your changes.
 5. Please follow the existing code style and test your changes before submitting the PR.
 
-## Demo Video
-Check out the demo video for the project:
 
-[![Demo Video]((https://img.youtu.be/q3VOY3ECM_Q.jpg))]((https://youtu.be/q3VOY3ECM_Q))
 

@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+# Aurumm - Business Transformation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aurumm is a website designed to help businesses transform through technology. It showcases different projects, allows users to get in touch, and provides a form for potential clients to reach out.
 
-Currently, two official plugins are available:
+## Features
+* Animated background elements
+* Contact form for business inquiries
+* Contact options via email and social media links (Instagram and Facebook)
+* Responsive design optimized for both mobile and desktop views
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+React.js - Frontend framework
+Tailwind CSS - Utility-first CSS framework for styling
+Icons - React Icons (for social media icons and other visual elements)
 
-## Expanding the ESLint configuration
+## Installation
+To get started with the project, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
+Node.js (LTS version recommended) 
+npm or yarn - These come bundled with Node.js.
 
-- Configure the top-level `parserOptions` property like this:
+### Setup Instructions
+1. Clone the repository to your local machine:
+``` git clone git@github.com:NischalKShaj/aurrum_frontend.git```
+2. Navigate into the project folder:
+   ``` cd aurumm_frontend```
+3. Install the required dependencies: If you are using npm:
+   ``` npm install ```
+    Or if you are using yarn:
+   ``` yarn install ```
+4. After the dependencies are installed, start the development server:
+   ```npm run dev```
+   Or with yarn:
+   ```yarn dev```
+5. Open the project in your browser by visiting http://localhost:5173.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Folder Structure
+The project has the following folder structure:
+```/aurumm_frontend
+  ├── /public                # Static files such as images, icons, and the favicon
+  ├── /src
+      ├── /components        # Reusable components like Navbar, Footer, etc.
+      ├── /routes            # Routes for the application
+      ├── /pages             # Pages like Home, Contact, etc.
+      └── /utils             # Utility functions (if any)
+  ├── .gitignore             # Git ignore file
+  ├── tailwind.config.js     # TailwindCSS configuration
+  ├── postcss.config.js      # PostCSS configuration
+  ├── package.json           # Project metadata and dependencies
+  ├── README.md              # This file
+  └── next.config.js         # Next.js configuration
 ```
+## How to Contribute
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Make your changes and commit them with a meaningful message.
+3. Push your changes to your forked repository.
+4. Open a pull request (PR) with a description of your changes.
+5. Please follow the existing code style and test your changes before submitting the PR.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Demo Video
+Check out the demo video for the project:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+[![Demo Video]([https://img.youtube.com/vi/VIDEO_ID/0.jpg](https://youtu.be/q3VOY3ECM_Q))]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/q3VOY3ECM_Q))
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
